@@ -1,0 +1,22 @@
+# macOS
+.DS_Store
+
+# Julia environments and generated files
+.julia/
+*.ji
+*.jl.cov
+*.jl.*.cov
+*.jl.mem
+/deps/
+/build.log
+/local/
+
+# Compiled native libraries
+*.so
+*.dylib
+*.dll
+*.o
+*.a
+
+# VS Code workspace settings
+.vscode/
