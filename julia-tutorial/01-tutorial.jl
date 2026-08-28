@@ -17,3 +17,5 @@ println(typeof(complex_number)) # Complex{Int64}
 total = 7 + 3 * 2
 area = 2.0^2 * pi
 is_valid = total >= 10 && total !=0
+
+println(total)
