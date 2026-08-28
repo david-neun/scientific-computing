@@ -84,3 +84,5 @@ end
 
 my_line = GenericLine{Float64}(2.0, 1.0)
 
+# study 
+ 
