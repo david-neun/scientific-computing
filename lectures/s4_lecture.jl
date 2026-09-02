@@ -1,3 +1,7 @@
+# topic: Catastrophic Cancellation
+# the catastrophic cancellation occurs when we subtract two nearly equal numbers, which can lead to a significant loss of precision in numerical computations. In this case, the expression (1e+14) + 1 - (1e-14) can be simplified to 1e+14 + 1 - 1e-14, which is approximately equal to 1e+14 + 1. However, due to the limitations of floating-point arithmetic, the result may not be accurate.
+# the professor did f(x) = x^2
+
 # lets do the derivative of the function f(x) = x^2 + 3x + 2 creating a function that takes in a function and returns its derivative using the limit definition of a derivative.
 function derivative(f, x, h=1e-8)
     return (f(x + h) - f(x)) / h
@@ -9,8 +13,10 @@ x = 1
 dfdx = derivative(f, x)
 println("The derivative of f(x) at x = $x is $dfdx")
 
-
+# run this command on Julia> ] add Plots
 using Plots
+# plot the function f(x) and its derivative
+
 
 
 ## Now let's plot the function f(x) and its derivative
